@@ -87,6 +87,11 @@ const Letter = ({ changeVisibility }) => {
     </button>
         </div>
       </div>
+      <h1 style={{
+        position: "absolute",
+        top: '85%',
+        right: '3%'
+      }}>Por: Daniela Correa Díaz</h1>
     </section>
   )
 }
