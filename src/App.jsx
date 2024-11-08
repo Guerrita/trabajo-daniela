@@ -1,16 +1,23 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 import NavHeader from './components/NavHeader'
+import Letter from './components/Letter'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isLetterVisible, setIsLetterVisible] = useState(true)
+
+  const changeVisibility = () => {
+    setIsLetterVisible(false)
+  }
 
   return (
     <>
+      {isLetterVisible ? (
+        <Letter changeVisibility={changeVisibility}/>
+      ) : (
         <NavHeader />
+      )}
     </>
   )
 }

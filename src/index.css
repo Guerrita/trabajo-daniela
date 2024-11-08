@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "EB Garamond", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -18,8 +20,13 @@
 }
 
 body {
+  font-family: "EB Garamond", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+}
+
+button{
+  font-family: "EB Garamond", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
