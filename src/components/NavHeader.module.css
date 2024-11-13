@@ -140,3 +140,89 @@
     padding: 1rem;
   }
 }
+
+.scatteredPhotos {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos base para todas las fotos */
+.photo1, .photo2, .photo3, .photo4, .photo5, .photo6 {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.photo1:hover, .photo2:hover, .photo3:hover, 
+.photo4:hover, .photo5:hover, .photo6:hover {
+  transform: scale(1.1) rotate(0deg) !important;
+  z-index: 10;
+}
+
+.photo1 {
+  transform: rotate(-15deg);
+  z-index: 1;
+  top: 10%;
+  left: 20%;
+}
+
+.photo2 {
+  transform: rotate(10deg);
+  z-index: 2;
+  top: 5%;
+  left: 35%;
+}
+
+.photo3 {
+  transform: rotate(-5deg);
+  z-index: 3;
+  top: 15%;
+  right: 30%;
+}
+
+.photo4 {
+  transform: rotate(8deg);
+  z-index: 4;
+  bottom: 20%;
+  left: 25%;
+}
+
+.photo5 {
+  transform: rotate(-12deg);
+  z-index: 5;
+  bottom: 15%;
+  right: 25%;
+}
+
+.photo6 {
+  transform: rotate(15deg);
+  z-index: 6;
+  top: 20%;
+  right: 20%;
+}
+
+@media (max-width: 768px) {
+  .scatteredPhotos {
+    height: 300px;
+  }
+  
+  .photo1, .photo2, .photo3, .photo4, .photo5, .photo6 {
+    width: 150px;
+  }
+  
+  .photo1 { left: 10%; }
+  .photo2 { left: 25%; }
+  .photo3 { right: 20%; }
+  .photo4 { left: 15%; }
+  .photo5 { right: 15%; }
+  .photo6 { right: 10%; }
+}
