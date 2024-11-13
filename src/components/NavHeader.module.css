@@ -145,7 +145,7 @@
   position: relative;
   width: 100%;
   height: 400px;
-  margin: 20px 0;
+  margin: 70px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,46 +168,40 @@
   z-index: 10;
 }
 
-.photo1 {
-  transform: rotate(-15deg);
-  z-index: 1;
-  top: 10%;
-  left: 20%;
-}
 
 .photo2 {
   transform: rotate(10deg);
   z-index: 2;
   top: 5%;
-  left: 35%;
+  left: 8%;
 }
 
 .photo3 {
   transform: rotate(-5deg);
   z-index: 3;
   top: 15%;
-  right: 30%;
+  right: 14%;
 }
 
 .photo4 {
   transform: rotate(8deg);
   z-index: 4;
   bottom: 20%;
-  left: 25%;
+  left: 23%;
 }
 
 .photo5 {
   transform: rotate(-12deg);
   z-index: 5;
   bottom: 15%;
-  right: 25%;
+  left: 40%;
 }
 
 .photo6 {
   transform: rotate(15deg);
   z-index: 6;
   top: 20%;
-  right: 20%;
+  left: 55%;
 }
 
 @media (max-width: 768px) {

@@ -283,7 +283,6 @@ const NavHeader = () => {
               <li>Adapta tus recetas, pero no pierdas tu sazón: Puede que la arepa paisa nunca compita con la de huevo, pero aprender a preparar tu propia comida costeña en Medellín es un arte. Domina el arte de encontrar yuca, plátano y coco para tus sagrados patacones y arroces, y mantén tu sazón costeña en cada plato.</li>
             </ol>
             <div className={styles.scatteredPhotos}>
-              <img src={tips1} className={styles.photo1} alt="Tip 1" />
               <img src={tips2} className={styles.photo2} alt="Tip 2" />
               <img src={tips3} className={styles.photo3} alt="Tip 3" />
               <img src={tips4} className={styles.photo4} alt="Tip 4" />

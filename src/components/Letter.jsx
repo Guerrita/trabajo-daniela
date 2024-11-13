@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+import estampilla from '../assets/estampilla.png'
 const Letter = ({ changeVisibility }) => {
   const [isHovered, setIsHovered] = useState(false)
   const [isPressed, setIsPressed] = useState(false)
@@ -63,7 +64,7 @@ const Letter = ({ changeVisibility }) => {
         transform: 'translate(-50%, -50%)',
         fontFamily: 'Special Elite, serif',
         color: '#000',
-        fontSize: '2.5rem',
+        fontSize: '2rem',
         zIndex: 2,
         textAlign: 'center'
       }}>
@@ -134,14 +135,14 @@ const Letter = ({ changeVisibility }) => {
         textShadow: '1px 1px 1px rgba(0,0,0,0.1)',
         zIndex: 2
       }}>
-        <img 
-        src="../src/assets/estampilla.png" 
-        style={{width: '80%', marginHorizontal: 'auto'}}
+        <img
+          src={estampilla}
+          style={{ width: '60%', marginHorizontal: 'auto' }}
         />
-        <h1 style={{
+        <h3 style={{
           fontFamily: 'Special Elite, serif',
           textShadow: '1px 1px 1px rgba(0,0,0,0.1)',
-        }}>Remite: Daniela Correa Díaz</h1>
+        }}>Remite: Daniela Correa Díaz</h3>
       </div>
     </section>
   )
