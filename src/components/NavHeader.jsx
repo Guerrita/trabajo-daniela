@@ -27,7 +27,7 @@ const NavHeader = () => {
       case 'info':
         return (
           <div className={styles.sectionContent}>
-            <h2>Querido lector</h2>
+            <h2 style={{color: 'var(--red)'}}>Querido lector</h2>
             <p>Quiero contarte una historia que cada vez se repite más: la de los jóvenes cartageneros que, con maletas llenas de sueños y expectativas, llegan a Medellín buscando lo que no encuentran en casa. Hace ya varios años, la ciudad se ha convertido en uno de los principales destinos para quienes desean estudiar en una Institución de Educación Superior (IES) de alta calidad, y muchos cartageneros han decidido seguir ese camino.</p>
             <p>Te cuento que, según El Tiempo (2021), en ciudades como Bogotá, solo el 18,31% de los estudiantes logra ingresar a universidades de alta calidad, mientras que, en Medellín, ese porcentaje es mucho mayor, superando el 60%. Esta diferencia ha empujado a muchos jóvenes a migrar, dejando atrás el calor de su tierra para enfrentarse a la vida en una ciudad más fría, pero también llena de oportunidades.</p>
             <p>En casa, la oferta educativa no siempre es suficiente. La Revista Uniandes (2015) lo explica claramente: si alguien se va de su ciudad para estudiar es porque no encuentra lo que necesita donde vive. Esto deja en evidencia una falla en las políticas de educación superior, que no han logrado expandirse lo suficiente en regiones como Cartagena, obligando a los estudiantes a desplazarse si quieren acceder a programas que les permitan crecer profesionalmente.</p>
@@ -63,10 +63,10 @@ const NavHeader = () => {
       case 'new':
         return (
           <div className={styles.sectionContent}>
-            <h2>El relato de una cartagenera recién llegada:</h2>
+            <h2 style={{color: 'var(--red)'}}>El relato de una cartagenera recién llegada:</h2>
             <h3>Siendo primípara universitaria en tiempos de COVID</h3>
             <h3>Por: Daniela Correa Díaz</h3>
-            <p>Nunca pensé que mi primer año de universidad vendría acompañado de una pandemia. Era enero de 2020, acababa de llegar a Medellín con toda la ilusión de empezar una nueva etapa en mi vida, cuando todo cambió de un momento a otro. Nos encerraron una semana de marzo, y allí estaba yo, recién llegada, primípara y lejos de casa, compartiendo un apartamento con mi primo hermano. No imaginaba que lo más complicado de mi llegada a la ciudad no sería adaptarme a las clases, sino enfrentarme a una ambulancia, un hospital vacío y una sensación de soledad que, hasta ese momento, no conocía.</p>
+            <p><b>Nunca pensé que mi primer año de universidad vendría acompañado de una pandemia. Era enero de 2020, acababa de llegar a Medellín con toda la ilusión de empezar una nueva etapa en mi vida, cuando todo cambió de un momento a otro. Nos encerraron una semana de marzo, y allí estaba yo, recién llegada, primípara y lejos de casa, compartiendo un apartamento con mi primo hermano. No imaginaba que lo más complicado de mi llegada a la ciudad no sería adaptarme a las clases, sino enfrentarme a una ambulancia, un hospital vacío y una sensación de soledad que, hasta ese momento, no conocía.</b></p>
             <p>Una tarde de esa misma semana, un fuerte dolor en el estómago me empezó a preocupar. Mi primo, con su típica tranquilidad, me decía que probablemente solo necesitaba ir al baño, pero yo sabía que era algo más. El dolor persistió todo el día, hasta que por la noche apenas podía respirar. Fue entonces cuando decidimos llamar a una ambulancia. Mientras esperábamos, mi primo le contó a mis papás, quienes, desde Cartagena, no ocultaron su preocupación.</p>
             <p>Tiempo antes de ser ingresada a cirugía pude percibir y darme cuenta de la situación que estábamos viviendo. De por si el ambiente en urgencias es bastante tenso y ya en esas circunstancias era aterrador.</p>
             <p>Urgencias estaba vacío. Solo se escuchaban los murmullos de los pacientes ingresados por COVID-19. Uno de ellos, un viejito con alzhéimer, parecía más perdido que yo misma, preguntando con miedo a dónde lo llevarían. Esa escena, en medio de la soledad del hospital, me recordó cuán frágil era todo en esos momentos.</p>
@@ -88,7 +88,7 @@ const NavHeader = () => {
       case 'process':
         return (
           <div className={styles.sectionContent}>
-            <h2>“La tierra que te forma no es la misma que te hace crecer”</h2>
+            <h2 style={{color: 'var(--red)'}}>“La tierra que te forma no es la misma que te hace crecer”</h2>
             <p>María Camila Pérez Sepúlveda, estudiante de mercadeo de 24 años, decidió trasladarse en el año 2021 a Medellín para estudiar en la Universidad EAFIT, una elección que le ha permitido ampliar sus horizontes, aunque no sin el inevitable sentimiento de nostalgia por lo que dejó atrás. </p>
             <p>Antes de mudarse, María Camila vivía en el barrio Getsemaní, cerca del centro de Cartagena, un sector pequeño y lleno de historia. Su vida en la costa era, como ella dice, “casi un sueño hecho realidad”. Recuerda cómo los sábados en la mañana salía por una arepa de huevo en la esquina de su casa y se sentaba en la mecedora junto a la puerta, mirando a la gente pasar mientras el aire fresco de la mañana que poco a poco se iba convirtiendo en el fogaje del medio día.</p>
             <p>Sus recuerdos de Getsemaní están llenos de detalles de una vida que describen el encanto y la tranquilidad de su ciudad natal.</p>
@@ -109,7 +109,7 @@ const NavHeader = () => {
       case 'adapted':
         return (
           <div className={styles.sectionContent}>
-            <h2>Un cartagenero que ya se adaptó: </h2>
+            <h2 style={{color: 'var(--red)'}}>Un cartagenero que ya se adaptó: </h2>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <img src={sebastian} style={{ maxWidth: '100%', height: 'auto' }} alt="Retos" />
             </div>
@@ -171,7 +171,7 @@ const NavHeader = () => {
       case 'tips':
         return (
           <div className={styles.sectionContent}>
-            <h2>¿Cómo adaptarse a ser foráneo en Medellín y no morir en el intento (versión costeña)?</h2>
+            <h2 style={{color: 'var(--red)'}}>¿Cómo adaptarse a ser foráneo en Medellín y no morir en el intento (versión costeña)?</h2>
             <ol>
               <li>Prepárate para el arte de explicar tus costumbres: En cada reunión o paseo, te harán preguntas sobre Cartagena y la costa. Úsalo como tu carta de presentación: cuenta historias de Carnaval, de playa, de comida, y de paso, demuéstrales que ser costeño es más que sólo amor por el mar.</li>
               <li>Desarrolla un radar para identificar otros costeños en Medellín: Es un don único, como un sexto sentido. Detectarás costeños a la distancia solo por sus frases, su sonrisa fácil y la forma en que se mueven. ¡Alíate con ellos y forma tu pequeña comunidad!</li>

@@ -3,20 +3,32 @@ import './App.css'
 
 import NavHeader from './components/NavHeader'
 import Letter from './components/Letter'
+import LetterFirstPage from './components/LetterFirstPage'
+
 
 function App() {
+  const [isLetterCoverVisible, setIsLetterCoverVisible] = useState(true)
   const [isLetterVisible, setIsLetterVisible] = useState(true)
 
   const changeVisibility = () => {
+    setIsLetterCoverVisible(false)
+  }
+  const changeLetterVisibility = () => {
     setIsLetterVisible(false)
   }
 
   return (
     <>
-      {isLetterVisible ? (
-        <Letter changeVisibility={changeVisibility}/>
+      {isLetterCoverVisible ? (
+        <Letter changeVisibility={changeVisibility} />
       ) : (
-        <NavHeader />
+
+        isLetterVisible ? (
+          <LetterFirstPage changeVisibility={changeLetterVisibility} />
+        ) :
+          (
+            <NavHeader />
+          )
       )}
     </>
   )
