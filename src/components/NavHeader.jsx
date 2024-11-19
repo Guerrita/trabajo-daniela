@@ -1,11 +1,11 @@
 import { useState } from 'react';
+import { PieChart, Pie, Cell, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
 import styles from './NavHeader.module.css';
 
+import SurveyCharts from './SurveyCharts';
 
 import colombiaImage from '../assets/colombia.jpg';
-import motivacion from '../assets/motivacion.png';
-import reto from '../assets/reto.png';
-import volver from '../assets/volver.png';
 
 import new1 from '../assets/new/1.jpeg';
 import new2 from '../assets/new/2.jpeg';
@@ -28,8 +28,32 @@ import tips3 from '../assets/tips/3.jpeg';
 import tips4 from '../assets/tips/4.jpeg';
 import tips5 from '../assets/tips/5.jpeg';
 import tips6 from '../assets/tips/6.jpeg';
+
+
 const NavHeader = () => {
   const [activeSection, setActiveSection] = useState('info');
+
+  const returnData = [
+    { name: "Prefieren quedarse en Medellín", value: 6 },
+    { name: "Sí, pero no es seguro", value: 2 },
+    { name: "No lo han considerado", value: 13 }
+  ];
+  
+  const challengesData = [
+    { name: "Adaptación cultural", value: 2 },
+    { name: "Encontrar empleo", value: 0 },
+    { name: "Encontrar grupo social", value: 4 },
+    { name: "Lejanía de la familia", value: 15 }
+  ];
+  
+  const motivationData = [
+    { name: "Calidad de las universidades", estudiantes: 13 },
+    { name: "Oportunidades laborales", estudiantes: 5 },
+    { name: "Recomendación familiares/amigos", estudiantes: 2 },
+    { name: "Otros", estudiantes: 1 }
+  ];
+  
+  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
   const sections = [
     { id: 'info', label: 'Contexto' },
@@ -62,18 +86,7 @@ const NavHeader = () => {
             <p>Este proceso, aunque enriquecedor, no siempre es fácil. Muchos jóvenes enfrentan el reto de estar lejos de casa, de sus familias y amigos, y eso tiene un peso emocional que no siempre es visible o reconocido por las instituciones educativas. Aunque se habla mucho de la calidad académica, poco se menciona lo que significa para estos estudiantes hacer este cambio en su vida.</p>
             <p>Así que, mientras seguimos viendo a más cartageneros llegar a Medellín en busca de mejores oportunidades, también es importante reconocer que detrás de cada uno de ellos hay una historia de adaptación, de crecimiento y, en muchos casos, de nostalgia por lo que dejaron atrás.</p>
             <p>Hemos realizado una encuesta para conocer algunos efectos y causas de la situación:</p>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
-              <img src={motivacion} style={{ maxWidth: '100%', objectFit: 'contain' }} alt="Motivacion" />
-            </div>
-            <br />
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <img src={volver} style={{ maxWidth: '100%', objectFit: 'contain' }} alt="Volver" />
-            </div>
-            <br />
-
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <img src={reto} style={{ maxWidth: '100%', objectFit: 'contain' }} alt="Retos" />
-            </div>
+<SurveyCharts/>
             <p>Tesis de grado U. Nacional (2021):</p>
             <p>“Existen situaciones que las estadísticas no pueden medir, como la dificultad de adaptación y la apropiación del lugar o del entorno, con el agravante de los recursos limitados con que cuentan los migrantes”.</p>
           </div>
